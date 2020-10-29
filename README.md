@@ -15,9 +15,13 @@ To use this utility in your project, you have to:
 
 ## Debugging with CORTEX-DEBUG
 
-**CORTEX-DEBUG** support debugging of ARM Cortex-M Microcontrollers. This plugin use the configuration file *launch.json* (see [https://go.microsoft.com/fwlink/?linkid=830387](https://go.microsoft.com/fwlink/?linkid=830387)). To see more details open the file *.vscode/launch.json*. Before use this plugin you have to install the programs. After that, you can use the VS Code menu to RUN/DEBUG the preogam.
+**CORTEX-DEBUG** support debugging of ARM Cortex-M Microcontrollers. This plugin use the configuration file *launch.json* (see [https://go.microsoft.com/fwlink/?linkid=830387](https://go.microsoft.com/fwlink/?linkid=830387)). To see more details open the file *.vscode/launch.json*.
 
-[**OpenOCD**](http://openocd.org/) and [**GNU Arm Embedded Toolchain**](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads).
+Before use this plugin you have to install the programs [**OpenOCD**](http://openocd.org/) and [**GNU Arm Embedded Toolchain**](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads). After that, you have to edit the attribule "executable" in *.vscode/launch.json* file and write the  location of the *.elf* compiled file:
+
+![launch.json executable](images/executable.png)
+
+Now you can use the VS Code menu to RUN/DEBUG the program.
 
 ## Using launcher buttons on Statusbar
 
