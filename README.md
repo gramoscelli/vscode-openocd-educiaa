@@ -1,4 +1,4 @@
-# Utility for EDU-CIAA debugging with VS Code and install quick Launch buttons on Statusbar
+# Utility for EDU-CIAA debugging with VS Code and install quick launch buttons on Statusbar
 
 We use two Visual Studio Code plugins:
 
