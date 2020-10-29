@@ -21,6 +21,8 @@ Before use this plugin you have to install the programs [**OpenOCD**](http://ope
 
 ![launch.json executable](images/executable.png)
 
+(We will use "Commands Substitions" in the future and avoid this *ad-hoc* modification).
+
 Now you can use the VS Code menu to RUN/DEBUG the program.
 
 ## Using launcher buttons on Statusbar
