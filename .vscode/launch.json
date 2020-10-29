@@ -5,37 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug EDU-CIAA",
+            "type": "cortex-debug",
             "cwd": "${workspaceRoot}",
             "interface": "jtag",
             "preLaunchTask": "Download",
             "preLaunchCommands": ["set mem inaccessible-by-default off"],
-            "executable": "RTOS_1/examen/out/examen.elf",
+            "executable": "examples/c/app/out/app.elf",
             "openOCDPreConfigLaunchCommands": ["gdb_memory_map disable"],
             "device": "EDU-CIAA",
-            "name": "Debug LPC4337",
             "runToMain": true,
             "request": "launch",
-            "type": "cortex-debug",
             "servertype": "openocd",
             "configFiles": [
                 "scripts/openocd/lpc4337.cfg",
             ]
-        },
-        {
-            "name": "Launch Extension",
-            "type": "extensionHost",
-            "request": "launch",
-            "runtimeExecutable": "${execPath}",
-            "args": ["--extensionDevelopmentPath=${workspaceRoot}" ],
-            "stopOnEntry": false
-        },
-        {
-            "name": "Launch Tests",
-            "type": "extensionHost",
-            "request": "launch",
-            "runtimeExecutable": "${execPath}",
-            "args": ["--extensionDevelopmentPath=${workspaceRoot}", "--extensionTestsPath=${workspaceRoot}/test" ],
-            "stopOnEntry": false
         }
     ]
 }
