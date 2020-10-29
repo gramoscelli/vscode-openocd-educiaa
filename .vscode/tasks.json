@@ -1,0 +1,34 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "make -j4",
+            "group": {
+              "kind": "build",
+              "isDefault": true
+            }
+          },
+          {
+            "label": "Download",
+            "type": "shell",
+            "command": "make -j4 download",
+            "group": {
+              "kind": "build",
+              "isDefault": true
+            }
+          },
+          {
+            "label": "Clean",
+            "type": "shell",
+            "command": "make clean",
+            "group": {
+              "kind": "build",
+              "isDefault": true
+            }
+          }
+        ]
+  }
