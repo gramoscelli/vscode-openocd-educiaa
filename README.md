@@ -1,23 +1,23 @@
 # Utility for EDU-CIAA debugging with VS Code and install quick launch buttons on Statusbar
 
-We use two Visual Studio Code plugins:
+The toolchain is based on two Visual Studio Code plugins:
 
 * [Cortex-Debug](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug)
 * [Tasks Statusbar](https://marketplace.visualstudio.com/items?itemName=hediet.tasks-statusbar)
 
 ![VSCode debugging](images/vs-code-debug.png)
 
-To use this utility in your project, you have to: 
+These are the steps to build the toolchain: 
 
-1. Install the two plugins listed below.
+1. The installation of two plugins (listed below).
 2. Copy the content of the folder *.vscode* on the root folder of your project.
 3. Restart VS Code and open the root folder of your project.
 
 ## Debugging with CORTEX-DEBUG
 
-**CORTEX-DEBUG** support debugging of ARM Cortex-M Microcontrollers. This plugin use the configuration file *launch.json* (see [https://go.microsoft.com/fwlink/?linkid=830387](https://go.microsoft.com/fwlink/?linkid=830387)). To see more details open the file *.vscode/launch.json*.
+**CORTEX-DEBUG** support the debugging of ARM Cortex-M Microcontrollers. This plugin use the configuration file *launch.json* (see [https://go.microsoft.com/fwlink/?linkid=830387](https://go.microsoft.com/fwlink/?linkid=830387)). To see more detailed options, open the file *.vscode/launch.json*.
 
-You have to install the programs [**OpenOCD**](http://openocd.org/) and [**GNU Arm Embedded Toolchain**](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) before use cortex-debug.Then you have to edit the attribule "executable" in *.vscode/launch.json* file and write the  location of the *.elf* compiled file:
+You have to install the programs [**OpenOCD**](http://openocd.org/) and [**GNU Arm Embedded Toolchain**](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) before use **cortex-debug**. Then edit the attribute "executable" in *.vscode/launch.json* file and write the  location of the *.elf* compiled file:
 
 ![launch.json executable](images/executable.png)
 
